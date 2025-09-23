@@ -94,12 +94,45 @@ Note: For a fully functional contact form, you'll need to implement server-side 
 
 ## 🌐 Deployment
 
-This website can be easily deployed to:
+### GitHub Pages (Automated via GitHub Actions)
+This repo now includes a workflow (`.github/workflows/deploy.yml`) that automatically publishes `main` to GitHub Pages.
 
-- **GitHub Pages**: Commit to `gh-pages` branch
-- **Netlify**: Drag and drop the folder or connect to GitHub
-- **Vercel**: Import from GitHub repository
-- **Any web hosting service**: Upload files via FTP
+Steps:
+1. Commit & push your changes to `main`.
+2. In GitHub, go to: Settings → Pages.
+3. Under "Build and deployment" set:
+   - Source: GitHub Actions
+4. Wait for the Actions tab to show the "Deploy to GitHub Pages" workflow success.
+5. Your site will be available at: `https://<your-username>.github.io/<repository-name>/`.
+
+Notes:
+- A `.nojekyll` file is included to ensure assets in folders starting with underscores are served.
+- Custom domain? Add a `CNAME` file at the repo root with your domain (e.g. `example.com`).
+
+### Manual (Alternative Simple Method)
+If you prefer the classic approach:
+
+```
+git checkout --orphan gh-pages
+git reset
+git add index.html styles.css script.js .nojekyll
+git commit -m "Publish"
+git push origin gh-pages --force
+```
+Then set Pages Source to branch: `gh-pages`, folder: `/ (root)`.
+
+### Netlify
+1. Create a new site from Git.
+2. Select this repository.
+3. Set build command: (leave blank) and publish directory: `/`.
+4. Deploy.
+
+### Vercel
+1. Import GitHub repo.
+2. No build step needed (static). Just deploy.
+
+### Any Static Host
+Upload `index.html`, `styles.css`, `script.js`, and supporting files to the document root.
 
 ## 📄 License
 

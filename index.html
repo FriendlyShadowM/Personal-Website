@@ -1,222 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal website showcasing my projects, skills, and experience">
-    <meta name="keywords" content="portfolio, developer, projects, skills">
-    <title>Your Name - Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio & resume for Marcus Vu" />
+    <meta name="keywords" content="Marcus Vu, portfolio, resume, software engineer, projects" />
+    <title>Marcus Vu – Portfolio & Resume</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+    <a class="skip-link" href="#home">Skip to content</a>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary">
         <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Your Name</a>
-            </div>
+            <div class="nav-logo"><a href="#home">Marcus Vu</a></div>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="nav-toggle" id="mobile-menu">
+            <button class="nav-toggle" id="mobile-menu" aria-label="Toggle navigation" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="text-gradient">Your Name</span>
-                </h1>
-                <p class="hero-subtitle">
-                    A passionate developer creating amazing digital experiences
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+    <main>
+        <!-- Hero / Home Section -->
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 id="hero-heading" class="hero-title">Hi, I'm <span class="text-gradient">Marcus Vu</span></h1>
+                    <p class="hero-subtitle">BS Software Engineering student (senior standing) with a strong STEM foundation, problem‑solving mindset, and a drive to keep learning.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">See Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        <a href="~mvu-gen-9.18.25.docx" class="btn btn-outline" download>Download Resume</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-placeholder"><div class="profile-icon" aria-hidden="true">👨‍💻</div></div>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="profile-placeholder">
-                    <div class="profile-icon">👨‍💻</div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Welcome to my personal website! I'm a passionate developer with a love for creating 
-                        innovative solutions and beautiful user experiences. With expertise in modern web 
-                        technologies, I enjoy turning ideas into reality.
-                    </p>
-                    <p>
-                        When I'm not coding, you can find me exploring new technologies, contributing to 
-                        open-source projects, or sharing knowledge with the developer community.
-                    </p>
-                </div>
-                <div class="skills">
-                    <h3>Skills & Technologies</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">JavaScript</div>
-                        <div class="skill-item">React</div>
-                        <div class="skill-item">Node.js</div>
-                        <div class="skill-item">Python</div>
-                        <div class="skill-item">HTML/CSS</div>
-                        <div class="skill-item">Git</div>
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title" class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Credit‑equivalent senior working to complete my B.S. in Software Engineering, with plans for a Master's and/or MBA. I have a proven track record of dedication, strong problem‑solving skills, and a desire to grow professionally.</p>
+                        <p>I'm seeking employment to apply my education and experience while continuing my studies.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">🚀</div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Project One</h3>
-                        <p class="project-description">
-                            A modern web application built with React and Node.js. 
-                            Features include user authentication, real-time updates, and responsive design.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
+        <!-- Skills (Compressed Layout) -->
+        <section id="skills" class="skills-section" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 id="skills-title" class="section-title">Technical Skills</h2>
+                <div class="skills-wrapper">
+                    <div class="skills-category">
+                        <h3>Languages</h3>
+                        <div class="skills-list">
+                            <span class="chip">Python</span>
+                            <span class="chip">Java</span>
+                            <span class="chip">C</span>
+                            <span class="chip">C++</span>
+                            <span class="chip">JavaScript</span>
+                            <span class="chip">TypeScript</span>
+                            <span class="chip">SQL</span>
+                            <span class="chip">HTML/CSS</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">💼</div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Project Two</h3>
-                        <p class="project-description">
-                            A mobile-first progressive web application that helps users manage 
-                            their daily tasks with an intuitive interface and offline capabilities.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">PWA</span>
-                            <span class="tech-tag">Firebase</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
+                    <div class="skills-category">
+                        <h3>Frameworks & Tools</h3>
+                        <div class="skills-list">
+                            <span class="chip">React</span>
+                            <span class="chip">Node.js</span>
+                            <span class="chip">FastAPI</span>
+                            <span class="chip">Git</span>
+                            <span class="chip">GitHub</span>
+                            <span class="chip">VS Code</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">🎨</div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Project Three</h3>
-                        <p class="project-description">
-                            An interactive data visualization dashboard that transforms complex 
-                            datasets into beautiful, understandable charts and graphs.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">D3.js</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Flask</span>
+                    <div class="skills-category">
+                        <h3>Platforms</h3>
+                        <div class="skills-list">
+                            <span class="chip">Linux</span>
+                            <span class="chip">Windows</span>
+                            <span class="chip">AWS</span>
+                            <span class="chip">GCP</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Core Competencies</h3>
+                        <div class="skills-list">
+                            <span class="chip">Machine Learning</span>
+                            <span class="chip">Software Architecture</span>
+                            <span class="chip">Debugging</span>
+                            <span class="chip">Design</span>
+                            <span class="chip">Testing</span>
+                            <span class="chip">Teamwork</span>
+                            <span class="chip">Problem‑Solving</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>
-                        I'm always interested in new opportunities and exciting projects. 
-                        Whether you have a question or just want to say hi, feel free to reach out!
-                    </p>
-                    <div class="contact-links">
-                        <a href="mailto:your.email@example.com" class="contact-link">
-                            📧 your.email@example.com
-                        </a>
-                        <a href="https://linkedin.com/in/yourprofile" class="contact-link">
-                            💼 LinkedIn
-                        </a>
-                        <a href="https://github.com/yourusername" class="contact-link">
-                            💻 GitHub
-                        </a>
-                        <a href="https://twitter.com/yourusername" class="contact-link">
-                            🐦 Twitter
-                        </a>
+        <!-- Education (Timeline + Collapsible Courses) -->
+        <section id="education" class="education-section" aria-labelledby="education-title">
+            <div class="container">
+                <h2 id="education-title" class="section-title">Education</h2>
+                <div class="education-timeline">
+                    <div class="education-item">
+                        <div class="edu-icon" aria-hidden="true">🎓</div>
+                        <div class="edu-content">
+                            <h3>San Jose State University <span class="edu-date">May 2026 (Projected)</span></h3>
+                            <p class="edu-role">B.S. Software Engineering • Minor: Mathematics</p>
+                            <p class="edu-meta">GPA: 3.8 • President's List</p>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="edu-icon" aria-hidden="true">🏅</div>
+                        <div class="edu-content">
+                            <h3>San Jose City College / Evergreen College <span class="edu-date">May 2025</span></h3>
+                            <p class="edu-role">IGETC • Certificate of Achievement L3</p>
+                            <p class="edu-meta">GPA: 3.72 • President's List</p>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="edu-icon" aria-hidden="true">🏫</div>
+                        <div class="edu-content">
+                            <h3>De Anza College <span class="edu-date">Dec 2024</span></h3>
+                            <p class="edu-role">General Education & STEM Coursework</p>
+                            <p class="edu-meta">GPA: 4.00 • President's List</p>
+                        </div>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+
+                <div class="related-courses">
+                    <h3 class="sr-only">Related Courses</h3>
+                    <div class="courses-grid">
+                        <div class="course-category">
+                            <h4>Computer Science Core</h4>
+                            <ul>
+                                <li>Data Structures & Algorithms</li>
+                                <li>Object‑Oriented Design</li>
+                                <li>Computer Organization & Architecture</li>
+                                <li>Operating Systems</li>
+                                <li>Computer Networks I</li>
+                                <li>Information Security</li>
+                            </ul>
+                        </div>
+                        <div class="course-category">
+                            <h4>Software Engineering</h4>
+                            <ul>
+                                <li>Software Eng. I & II</li>
+                                <li>Process Management</li>
+                                <li>Intro to AI</li>
+                                <li>Data Science</li>
+                                <li>Internet of Things</li>
+                            </ul>
+                        </div>
+                        <div class="course-category">
+                            <h4>Math & Science</h4>
+                            <ul>
+                                <li>Applied Probability & Statistics</li>
+                                <li>Discrete Mathematics</li>
+                                <li>Differential Equations</li>
+                                <li>Multivariable Calculus</li>
+                                <li>Calculus II + Analytic Geometry</li>
+                                <li>General Physics I & II</li>
+                            </ul>
+                        </div>
+                        <div class="course-category">
+                            <h4>Programming</h4>
+                            <ul>
+                                <li>Assembly Programming</li>
+                                <li>Python / C / C++ / Java</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 id="projects-title" class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image"><div class="project-placeholder">🗳️</div></div>
+                        <div class="project-content">
+                            <h3 class="project-title">Political Analyzer</h3>
+                            <p class="project-description">Full‑stack web app using React, SQLite, and an NLP sentiment model to analyze political text.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">~90 days</span>
+                                <span class="tech-tag">5,000+ LOC</span>
+                                <span class="tech-tag">Grade: A</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image"><div class="project-placeholder">🧠</div></div>
+                        <div class="project-content">
+                            <h3 class="project-title">Connect 4 (Assembly)</h3>
+                            <p class="project-description">Assembly‑language implementation of Connect 4.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">30 days</span>
+                                <span class="tech-tag">394 LOC</span>
+                                <span class="tech-tag">Grade: A</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image"><div class="project-placeholder">🛒</div></div>
+                        <div class="project-content">
+                            <h3 class="project-title">BuyOrganic</h3>
+                            <p class="project-description">Grocery shopping website built with Python & TypeScript.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">~90 days</span>
+                                <span class="tech-tag">5,000+ LOC</span>
+                                <span class="tech-tag">Grade: A</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image"><div class="project-placeholder">📦</div></div>
+                        <div class="project-content">
+                            <h3 class="project-title">Inventory List (Java)</h3>
+                            <p class="project-description">Java application to catalog items with a simple database.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">7 days</span>
+                                <span class="tech-tag">282 LOC</span>
+                                <span class="tech-tag">Grade: A</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image"><div class="project-placeholder">🤖</div></div>
+                        <div class="project-content">
+                            <h3 class="project-title">RobotiC (C)</h3>
+                            <p class="project-description">Built and programmed a robot to complete specific tasks.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">30 days</span>
+                                <span class="tech-tag">259 LOC</span>
+                                <span class="tech-tag">Grade: A</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image"><div class="project-placeholder">🚀</div></div>
+                        <div class="project-content">
+                            <h3 class="project-title">Space Shooter (Pygame)</h3>
+                            <p class="project-description">Arcade‑style game built in spare time using Pygame.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">~30 days</span>
+                                <span class="tech-tag">186 LOC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="about" aria-labelledby="experience-title">
+            <div class="container">
+                <h2 id="experience-title" class="section-title">Experience</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="experience-item">
+                            <h3>Tutor</h3>
+                            <h4>Milpitas Middle College High School — 2023</h4>
+                            <p>Tutored students in various subjects.</p>
+                        </div>
+                        <div class="experience-item">
+                            <h3>Tutor</h3>
+                            <h4>SJCC Math Jam — 2022</h4>
+                            <p>Tutored students in Integrated Math II.</p>
+                        </div>
+                        <div class="experience-item">
+                            <h3>Tutor</h3>
+                            <h4>Milpitas High School — 2021</h4>
+                            <p>Tutored students in Integrated Math I.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>Open to internships and part‑time roles. Feel free to reach out!</p>
+                        <div class="contact-links">
+                            <a href="mailto:marcusmvu408@gmail.com" class="contact-link">📧 marcusmvu408@gmail.com</a>
+                            <a href="https://www.linkedin.com/in/marcus-vu-20615b249" class="contact-link">💼 LinkedIn</a>
+                            <a href="https://github.com/FriendlyShadowM" class="contact-link">💻 GitHub</a>
+                        </div>
+                    </div>
+                    <form class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>&copy; 2024 Marcus Vu. All rights reserved.</p>
         </div>
     </footer>
 
